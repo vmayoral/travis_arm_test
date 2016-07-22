@@ -1,8 +1,9 @@
 language: python
+sudo: true
 
 env:
     - ARCH=x64
     - ARCH=arm
 
 script:
-    - "bash -ex travis-ci.sh"
+    - "sudo bash -ex travis-ci.sh"
